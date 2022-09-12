@@ -1,84 +1,67 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
 body{
-    font-family: Arial, Verdana;
-    background-color: #000000;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+	margin:1%;
+	padding:1%;
+	font-size:150%;
 }
+
+/*Make the h1 heading bigger with a bold font*/
 h1{
-    font-size: 42px;
-    text-align: center;
-    padding: 15px;
+	font-size: 2em; 
+	font-weight: bold;
 }
-h2{
-    font-size: 30px;
-    color: #0D0D0D;
+
+.active{
+	background: white;
+    text-transform: uppercase;
+	text-align: center;
 }
-p{
-    font-size: 24px;
-    padding-top: 10px;
-    padding-left: 10px;
+
+.active a{
+	text-decoration: none;;
 }
+
+/*Style the images*/
 img{
-    width: 250px;
-    border: 10px dashed #ffffff;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 175px;
+	width:auto;
+    border: 3px solid blue;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 10px;
 }
-div{
-    min-height: 125px;
-    padding: 20px;
-    border: 3px solid #ffffff;
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
 }
-.introduction{
-    border-radius: 15px;
-    margin-top: 15px;
-    line-height: 2;
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
 }
-.red{
-    background-color: #ff0000;
-    text-align: right;
-    margin-left: 50px;
-    border-width: 0px 0px 2px 5px;
+
+/*Add borders around the main components and some
+space too*/
+header, nav, main, footer{
+	border: 3px solid red;
+	margin: 20px 0;
 }
-div.blue{
-    background-color:#0000ff;
-    text-align: left;
-    margin-right: 50px;
-    border-width: 2px 5px 0px 0px;
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	background-color: #ECFF4D;
+	padding:10px;
+	width:25%;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
 }
-div.blue p{
-    color: #C4C4C4;
-}
-div.blue h2{
-    color: #C4C4C4;
-}
-div.yellow{
-    background-color: #ffff00;
-    text-align: right;
-    margin-left: 50px;
-    border-width: 0px 0px 2px 5px;
-}
-div.yellow p{
-    color: #707070;
-}
-div.green{
-    background-color:  #00EB00;
-    text-align: left;
-    margin-right: 50px;
-    border-width: 2px 5px 0px 0px;
-}
-footer{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,255,1) 25%, rgba(0,102,255,1) 70%, rgba(0,0,0,1) 79%);
-    border: 5px solid #ffffff;
-}
-footer p{
-    font-size: 20px;
-    text-align: right;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
+
+/*Added this so the links stay the same color*/
+a:visited{color:#0000FF}
+
